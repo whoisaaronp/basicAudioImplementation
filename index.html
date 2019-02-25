@@ -6,7 +6,19 @@
 </head>
 <body>
 	<h1>This is audio</h1>
-	<audio src="audio/STP_Interstate_Love_Song.mp3" autoplay="true" loop controls></audio>
-	<script type="js/main.js"></script>
+	<audio src="audio/STP_Interstate_Love_Song.mp3" autoplay="true" loop></audio>
+	
+	<!--  data-currenttrack means play that 'song' when i click on it. -->
+	<img data-currenttrack="STP_Interstate_Love_Song.mp3" src="images/stp_promo.jpg" alt="album img" class="trackholder" width="300" height="300">
+	<img data-currenttrack="Companion.mp3" src="images/stp_promo.jpg" alt="album img" class="trackholder" width="300" height="300">
+	<img data-currenttrack="Sail.mp3" src="images/stp_promo.jpg" alt="album img" class="trackholder" width="300" height="300">
+
+	<div>
+		<button id="playAudio">Play</button>
+		<button id="stopAudio">Pause</button>
+		<button id="rewindAudio">Rewind</button>
+	</div>
+
+	<script src="js/main.js"></script>
 </body>
 </html>
